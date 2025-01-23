@@ -28,9 +28,7 @@ const renderObject = {
   ),
   4: (
     <InfoBox
-      text={
-        "Let’s connect! Whether it's for collaboration, feedback, or just a chat, I’d love to hear from you."
-      }
+      text={`Let’s connect! Whether it's for collaboration, feedback, or just a chat, I’d love to hear from you.`}
       link={"/contact"}
       btnText={"Get In Touch"}
     />
