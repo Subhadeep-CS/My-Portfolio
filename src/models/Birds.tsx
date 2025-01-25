@@ -12,14 +12,11 @@ const Birds: React.FC = () => {
     actions["Take 001"]?.play();
   }, [actions, birdRef]);
 
-  useFrame(({ clock, camera }) => {
-    console.log(clock);
+  useFrame(({ camera }) => {
     if (birdRef?.current) {
       if (birdRef.current.position.x > camera.position.x + 10) {
-        // Change direction to backward and rotate the bird 180 degrees on the y-axis
         birdRef.current.rotation.y = Math.PI;
       } else if (birdRef.current.position.x < camera.position.x - 10) {
-        // Change direction to forward and reset the bird's rotation
         birdRef.current.rotation.y = 0;
       }
 
