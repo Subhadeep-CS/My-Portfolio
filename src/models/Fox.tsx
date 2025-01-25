@@ -1,19 +1,23 @@
-import { useRef, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
-
+import { Group } from "three";
 import scene from "../assets/3d/fox.glb";
+import { FoxProps } from "./module";
 
-export function Fox({ currentAnimation, ...props }) {
-  const group = useRef();
-  const { nodes, materials, animations } = useGLTF(scene);
+export const Fox: React.FC<FoxProps> = ({ currentAnimation, ...props }) => {
+  const group = useRef<Group>(null);
+  const { nodes, materials, animations } = useGLTF(scene) as any;
   const { actions } = useAnimations(animations, group);
 
-  // This effect will run whenever the currentAnimation prop changes
   useEffect(() => {
-    Object.values(actions).forEach((action) => action.stop());
+    Object.values(actions).forEach((action) => {
+      if (action) action.stop();
+    });
 
-    if (actions[currentAnimation]) {
+    if (actions && actions[currentAnimation]) {
       actions[currentAnimation].play();
+    } else {
+      console.warn(`Animation "${currentAnimation}" does not exist.`);
     }
   }, [actions, currentAnimation]);
 
@@ -54,6 +58,4 @@ export function Fox({ currentAnimation, ...props }) {
       </group>
     </group>
   );
-}
-
-useGLTF.preload(scene);
+};

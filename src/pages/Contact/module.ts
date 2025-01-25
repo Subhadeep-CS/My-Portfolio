@@ -3,3 +3,5 @@ export interface CONTACT_FORM{
     email:string,
     message:string,
 }
+
+export type animation="idle" | "run" | "walk" | "sad"
