@@ -12,6 +12,7 @@ import redux from "../assets/icons/redux.svg";
 import sass from "../assets/icons/sass.svg";
 import motion from "../assets/icons/motion.svg";
 import shadcn from "../assets/icons/shadcn.png";
+import brainiumicon from "../assets/icons/brainiumicon.png";
 // import meta from "../assets/images/meta.png";
 // import {
 //     car,
@@ -41,127 +42,100 @@ import shadcn from "../assets/icons/shadcn.png";
 // } from "../assets/icons";
 
 export const skills = [
-    {
-        imageUrl: html,
-        name: "HTML",
-        type: "Frontend",
-    },
-    {
-        imageUrl: css,
-        name: "CSS",
-        type: "Frontend",
-    },
-    {
-        imageUrl: javascript,
-        name: "JavaScript",
-        type: "Frontend",
-    },
-    {
-        imageUrl: typescript,
-        name: "TypeScript",
-        type: "Frontend",
-    },
-    {
-        imageUrl: react,
-        name: "React",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nextjs,
-        name: "Next.js",
-        type: "Frontend",
-    },
-    {
-        imageUrl: redux,
-        name: "Redux",
-        type: "State Management",
-    },
-    {
-        imageUrl: sass,
-        name: "Sass",
-        type: "Frontend",
-    },
-    {
-        imageUrl: tailwindcss,
-        name: "Tailwind CSS",
-        type: "Frontend",
-    },
-    {
-        imageUrl: shadcn,
-        name: "ShadCN",
-        type: "Frontend",
-    },
-    {
-        imageUrl: git,
-        name: "Git",
-        type: "Version Control",
-    },
-    {
-        imageUrl: github,
-        name: "GitHub",
-        type: "Version Control",
-    },
-    {
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
-    },
+  {
+    imageUrl: html,
+    name: "HTML",
+    type: "Frontend",
+  },
+  {
+    imageUrl: css,
+    name: "CSS",
+    type: "Frontend",
+  },
+  {
+    imageUrl: javascript,
+    name: "JavaScript",
+    type: "Frontend",
+  },
+  {
+    imageUrl: typescript,
+    name: "TypeScript",
+    type: "Frontend",
+  },
+  {
+    imageUrl: react,
+    name: "React",
+    type: "Frontend",
+  },
+  {
+    imageUrl: nextjs,
+    name: "Next.js",
+    type: "Frontend",
+  },
+  {
+    imageUrl: redux,
+    name: "Redux",
+    type: "State Management",
+  },
+  {
+    imageUrl: sass,
+    name: "Sass",
+    type: "Frontend",
+  },
+  {
+    imageUrl: tailwindcss,
+    name: "Tailwind CSS",
+    type: "Frontend",
+  },
+  {
+    imageUrl: shadcn,
+    name: "ShadCN",
+    type: "Frontend",
+  },
+  {
+    imageUrl: git,
+    name: "Git",
+    type: "Version Control",
+  },
+  {
+    imageUrl: github,
+    name: "GitHub",
+    type: "Version Control",
+  },
+  {
+    imageUrl: motion,
+    name: "Motion",
+    type: "Animation",
+  },
 ];
 
-// export const experiences = [
-//     {
-//         title: "React.js Developer",
-//         company_name: "Starbucks",
-//         icon: starbucks,
-//         iconBg: "#accbe1",
-//         date: "March 2020 - April 2021",
-//         points: [
-//             "Developing and maintaining web applications using React.js and other related technologies.",
-//             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//             "Implementing responsive design and ensuring cross-browser compatibility.",
-//             "Participating in code reviews and providing constructive feedback to other developers.",
-//         ],
-//     },
-//     {
-//         title: "React Native Developer",
-//         company_name: "Tesla",
-//         icon: tesla,
-//         iconBg: "#fbc3bc",
-//         date: "Jan 2021 - Feb 2022",
-//         points: [
-//             "Developing and maintaining web applications using React.js and other related technologies.",
-//             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//             "Implementing responsive design and ensuring cross-browser compatibility.",
-//             "Participating in code reviews and providing constructive feedback to other developers.",
-//         ],
-//     },
-//     {
-//         title: "Web Developer",
-//         company_name: "Shopify",
-//         icon: shopify,
-//         iconBg: "#b7e4c7",
-//         date: "Jan 2022 - Jan 2023",
-//         points: [
-//             "Developing and maintaining web applications using React.js and other related technologies.",
-//             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//             "Implementing responsive design and ensuring cross-browser compatibility.",
-//             "Participating in code reviews and providing constructive feedback to other developers.",
-//         ],
-//     },
-//     {
-//         title: "Full stack Developer",
-//         company_name: "Meta",
-//         icon: meta,
-//         iconBg: "#a2d2ff",
-//         date: "Jan 2023 - Present",
-//         points: [
-//             "Developing and maintaining web applications using React.js and other related technologies.",
-//             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//             "Implementing responsive design and ensuring cross-browser compatibility.",
-//             "Participating in code reviews and providing constructive feedback to other developers.",
-//         ],
-//     },
-// ];
+export const experiences = [
+  {
+    title: "Software Engineer(React.js and Next.js)",
+    company_name: "Brainium Information Technologies Private Limited",
+    icon: brainiumicon,
+    iconBg: "#accbe1",
+    date: "August 2024 -  Present",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Software Developer Intern",
+    company_name: "Brainium Information Technologies Private Limited",
+    icon: brainiumicon,
+    iconBg: "#fbc3bc",
+    date: "Apr 2024 - July 2024",
+    points: [
+      "Built reusable React components to improve scalability",
+      "Assisted in migrating a project from React.js to Next.js, boosting performance and SEO",
+      "Worked with Git for version control and code reviews",
+    ],
+  },
+];
 
 // export const socialLinks = [
 //     {
