@@ -35,6 +35,7 @@ const renderObject = {
   ),
 };
 
+console.log("Calling Infobox");
 const HomeInfo: React.FC<{ currentStage: number | null }> = ({
   currentStage,
 }) => {
