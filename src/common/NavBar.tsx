@@ -7,9 +7,10 @@ const NavBar: React.FC = () => {
       {/* Logo */}
       <NavLink
         to="/home"
-        className="w-10 h-10 rounded-lg bg-white flex items-center justify-center font-bold shadow-md"
+        className="w-6 h-6 lg:w-10 lg:h-10 rounded-lg bg-white flex items-center justify-center font-bold shadow-md mr-2"
       >
-        <p className="blue-gradient_text">SD</p>
+        <p className="text-blue-500 font-bold">SD</p>{" "}
+        {/* Ensure this class is valid */}
       </NavLink>
 
       {/* Navigation Links */}
@@ -42,12 +43,12 @@ const NavBar: React.FC = () => {
       <a
         href="/SUBHADEEP_DAS_CV.pdf" // Update this with the actual CV path
         download
-        className="flex items-center gap-2 bg-white text-blue-600 px-4 py-2 rounded-lg font-medium shadow-md hover:bg-slate-200"
+        className="flex items-center gap-2 bg-white text-blue-600 lg:px-4 lg:py-2 px-2 py-1 rounded-lg font-medium shadow-md hover:bg-slate-200 ml-2"
         target="blank"
       >
-        Download CV
+        <span className="text-[12px] lg:text-sm">CV</span>
         <span className="animate-bounce">
-          <FiDownload className="w-5 h-5" />
+          <FiDownload className="lg:w-5 lg:h-5 w-3 h-3" />
         </span>{" "}
       </a>
     </header>
