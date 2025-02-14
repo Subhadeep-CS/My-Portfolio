@@ -38,7 +38,14 @@ const About: React.FC = () => {
       <div className="py-16">
         <h3 className="subhead-text">Work Experience</h3>
         <div className="mt-5 flex flex-col gap-3 text-slate-500">
-          <p className=""></p>
+          <p className="">
+            I’m a passionate React.js and Next.js developer dedicated to
+            crafting seamless and engaging user experiences. With a strong focus
+            on performance, accessibility, and modern web technologies, I build
+            scalable, interactive, and visually appealing applications. Always
+            exploring new tools and best practices, I thrive on turning ideas
+            into reality through clean and efficient code.
+          </p>
         </div>
         <div className="mt-12 flex">
           <VerticalTimeline>
